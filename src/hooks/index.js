@@ -40,7 +40,7 @@ const useCreateUser = (page) => {
       const userList = users?.data;
       const data = userList?.push(variables);
       queryCache.setQueryData(['users', page], {...users, data});
-      history.push('/users');
+      history.push('/users')
     },
     onError: (error) => {
       alert(error)
